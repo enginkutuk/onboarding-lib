@@ -1,0 +1,382 @@
+{
+    "onboarding": {
+      "settings": {
+        "showSubscription": false
+      },
+      "navigation": {
+        "dots": {
+          "show": true,
+          "activeColor": "#E11D48",
+          "inactiveColor": "#E5E7EB"
+        }
+      },
+      "steps": {
+        "order": ["welcome", "scan", "permissions", "history", "rating", "subscription"],
+        "welcome": {
+          "id": "welcome",
+          "gradientColors": {
+            "light": ["#E11D48", "#E11D48", "#E11D48"],
+            "dark": ["#1E293B", "#334155", "#475569"]
+          },
+          "content": {
+            "logo": {
+              "width": 180,
+              "height": 180,
+              "borderRadius": 15,
+              "resizeMode": "cover"
+            },
+            "title": "Flower Identifier",
+            "subtitle": "Plant Finder AI",
+            "description": "Çiçekleri ve bitkileri anında tanıyın! Fotoğraf çekin ve AI teknolojisi ile detaylı bilgi alın.",
+            "features": [
+              "Anında çiçek tanıma",
+              "Detaylı bakım tavsiyeleri",
+              "Bilimsel bilgiler",
+              "Geçmiş kayıtları"
+            ]
+          },
+          "navigation": {
+            "next": {
+              "text": "Başlayalım",
+              "icon": "arrow-right",
+              "show": true,
+              "style": {
+                "backgroundColor": "#E11D48"
+              },
+              "textStyle": {
+                "color": "#ffffff",
+                "fontFamily": "Inter-Bold"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        },
+        "scan": {
+          "id": "scan",
+          "content": {
+            "title": "Akıllı Tanıma",
+            "subtitle": "AI Destekli Analiz",
+            "description": "Kameranızı kullanarak anında ve doğru bir şekilde öğrenin:",
+            "features": [
+              "Çiçeğin adı ve türü",
+              "Bilimsel sınıflandırma",
+              "Bakım tavsiyeleri"
+            ]
+          },
+          "navigation": {
+            "next": {
+              "text": "İleri",
+              "icon": "arrow-right",
+              "show": true,
+              "style": {
+                "backgroundColor": "#EC4899"
+              },
+              "textStyle": {
+                "color": "#ffffff"
+              }
+            },
+            "back": {
+              "text": "Geri",
+              "icon": "arrow-left",
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        },
+        "permissions": {
+          "id": "permissions",
+          "icon": {
+            "type": "shield",
+            "size": 60,
+            "strokeWidth": 2,
+            "color": "#10B981"
+          },
+          "content": {
+            "title": "İzinler Gerekli",
+            "subtitle": "En İyi Deneyim İçin",
+            "securityMessage": "Uygulamanın tam özelliklerinden yararlanmak için aşağıdaki izinlere ihtiyacımız var:"
+          },
+          "permissionsList": [
+            {
+              "icon": {
+                "type": "camera",
+                "size": 20,
+                "strokeWidth": 2,
+                "color": "#E11D48"
+              },
+              "title": "Kamera Erişimi",
+              "description": "Çiçeklerin fotoğrafını çekmek için"
+            },
+            {
+              "icon": {
+                "type": "image",
+                "size": 20,
+                "strokeWidth": 2,
+                "color": "#EC4899"
+              },
+              "title": "Galeri Erişimi",
+              "description": "Mevcut fotoğrafları seçmek için"
+            },
+            {
+              "icon": {
+                "type": "hard-drive",
+                "size": 20,
+                "strokeWidth": 2,
+                "color": "#F97316"
+              },
+              "title": "Depolama",
+              "description": "Tanımlanan çiçekleri kaydetmek için"
+            },
+            {
+              "icon": {
+                "type": "map-pin",
+                "size": 20,
+                "strokeWidth": 2,
+                "color": "#14B8A6"
+              },
+              "title": "Konum Erişimi",
+              "description": "Çiçekleri konum bilgisi ile etiketlemek için"
+            }
+          ],
+          "navigation": {
+            "next": {
+              "text": "İzinleri Ver",
+              "icon": "arrow-right",
+              "show": true,
+              "style": {
+                "backgroundColor": "#10B981"
+              },
+              "textStyle": {
+                "color": "#ffffff"
+              }
+            },
+            "back": {
+              "text": "Geri",
+              "icon": "arrow-left",
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#EF4444"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        },
+        "history": {
+          "id": "history",
+          "icon": {
+            "type": "history",
+            "size": 80,
+            "strokeWidth": 2,
+            "color": "#F97316"
+          },
+          "content": {
+            "title": "Geçmiş Kayıtları",
+            "subtitle": "Koleksiyonunuzu Takip Edin",
+            "description": "Daha önce tanımladığınız tüm çiçekleri görüntüleyin:",
+            "features": [
+              "Detaylı tanımlama geçmişi",
+              "Favori çiçekleriniz",
+              "Notlar ve etiketler"
+            ]
+          },
+          "navigation": {
+            "next": {
+              "text": "İleri",
+              "icon": "arrow-right",
+              "show": true,
+              "style": {
+                "backgroundColor": "#14B8A6"
+              },
+              "textStyle": {
+                "color": "#ffffff"
+              }
+            },
+            "back": {
+              "text": "Geri",
+              "icon": "arrow-left",
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#14B8A6"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        },
+        "rating": {
+          "id": "rating",
+          "icon": {
+            "type": "star",
+            "size": 80,
+            "strokeWidth": 2,
+            "fill": true,
+            "color": "#F59E0B"
+          },
+          "content": {
+            "title": "Bizi Değerlendirin",
+            "subtitle": "Görüşünüz Bizim İçin Değerli",
+            "description": "Flower Identifier'ı beğendiyseniz, App Store'da bizi değerlendirmeyi unutmayın. Görüşleriniz bizim için çok değerli!",
+            "features": [
+              "Daha iyi özellikler geliştirmemize yardımcı olun",
+              "Diğer çiçek/bitki severlere ulaşalım",
+              "Uygulamanın gelişimine katkıda bulunun"
+            ]
+          },
+          "navigation": {
+            "next": {
+              "text": "Şimdi Değerlendir",
+              "icon": "star",
+              "show": true,
+              "style": {
+                "backgroundColor": "#F59E0B"
+              },
+              "textStyle": {
+                "color": "#ffffff"
+              }
+            },
+            "back": {
+              "text": "Geri",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        },
+        "subscription": {
+          "id": "subscription",
+          "gradientColors": {
+            "light": ["#8B5CF6", "#A855F7", "#C084FC"],
+            "dark": ["#581C87", "#7C3AED", "#A855F7"]
+          },
+          "icon": {
+            "type": "crown",
+            "size": 80,
+            "color": "#FFFFFF",
+            "strokeWidth": 2
+          },
+          "content": {
+            "title": "Premium'a Geçin",
+            "subtitle": "Sınırsız Tanımlama",
+            "description": "Premium üyelikle tüm özelliklerin kilidini açın:",
+            "features": [
+              "Sınırsız çiçek tanımlama",
+              "Detaylı bakım rehberleri",
+              "Hastalık teşhisi",
+              "Reklamsız deneyim"
+            ],
+            "pricing": {
+              "yearly": {
+                "title": "Yıllık",
+                "price": "₺199,99/yıl",
+                "discount": "%44 tasarruf"
+              }
+            },
+            "terms": "Kullanım Koşulları",
+            "privacy": "Gizlilik Politikası"
+          },
+          "navigation": {
+            "next": {
+              "text": "7 Gün Ücretsiz Dene",
+              "icon": "crown",
+              "show": true,
+              "style": {
+                "backgroundColor": "#8B5CF6"
+              },
+              "textStyle": {
+                "color": "#ffffff"
+              }
+            },
+            "back": {
+              "text": "İptal",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            },
+            "skip": {
+              "text": "Geç",
+              "icon": null,
+              "show": false,
+              "style": {
+                "backgroundColor": "transparent"
+              },
+              "textStyle": {
+                "color": "#6B7280"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

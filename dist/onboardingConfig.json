@@ -1,0 +1,380 @@
+{
+    "onboarding": {
+        "settings": {
+            "showSubscription": false
+        },
+        "navigation": {
+            "dots": {
+                "show": true,
+                "activeColor": "#E11D48",
+                "inactiveColor": "#E5E7EB"
+            }
+        },
+        "steps": {
+            "order": ["welcome", "scan", "permissions", "history", "rating", "subscription"],
+            "welcome": {
+                "id": "welcome",
+                "gradientColors": {
+                    "light": ["#E11D48", "#E11D48", "#E11D48"],
+                    "dark": ["#1E293B", "#334155", "#475569"]
+                },
+                "content": {
+                    "logo": {
+                        "width": 180,
+                        "height": 180,
+                        "borderRadius": 15,
+                        "resizeMode": "cover"
+                    },
+                    "title": "onboarding.welcome.title",
+                    "subtitle": "onboarding.welcome.subtitle",
+                    "description": "onboarding.welcome.description",
+                    "features": [
+                        "onboarding.welcome.features.0",
+                        "onboarding.welcome.features.1",
+                        "onboarding.welcome.features.2",
+                        "onboarding.welcome.features.3"
+                    ]
+                },
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.welcome.getStarted",
+                        "icon": "arrow-right",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#E11D48"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff",
+                            "fontFamily": "Inter-Bold"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.welcome.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            },
+            "scan": {
+                "id": "scan",
+                "content": {
+                    "title": "onboarding.scan.title",
+                    "subtitle": "onboarding.scan.subtitle",
+                    "description": "onboarding.scan.description",
+                    "features": [
+                        "onboarding.scan.features.1",
+                        "onboarding.scan.features.2",
+                        "onboarding.scan.features.3"
+                    ]
+                },
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.scan.continue",
+                        "icon": "arrow-right",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#EC4899"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "back": {
+                        "text": "onboarding.scan.back",
+                        "icon": "arrow-left",
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.scan.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            },
+            "permissions": {
+                "id": "permissions",
+                "icon": {
+                    "type": "shield",
+                    "size": 60,
+                    "strokeWidth": 2,
+                    "color": "#10B981"
+                },
+                "content": {
+                    "title": "onboarding.permissions.title",
+                    "subtitle": "onboarding.permissions.subtitle",
+                    "securityMessage": "onboarding.permissions.description"
+                },
+                "permissionsList": [
+                    {
+                        "icon": {
+                            "type": "camera",
+                            "size": 20,
+                            "strokeWidth": 2,
+                            "color": "#E11D48"
+                        },
+                        "title": "onboarding.permissions.camera",
+                        "description": "onboarding.permissions.cameraDesc"
+                    },
+                    {
+                        "icon": {
+                            "type": "image",
+                            "size": 20,
+                            "strokeWidth": 2,
+                            "color": "#EC4899"
+                        },
+                        "title": "onboarding.permissions.gallery",
+                        "description": "onboarding.permissions.galleryDesc"
+                    },
+                    {
+                        "icon": {
+                            "type": "hard-drive",
+                            "size": 20,
+                            "strokeWidth": 2,
+                            "color": "#F97316"
+                        },
+                        "title": "onboarding.permissions.storage",
+                        "description": "onboarding.permissions.storageDesc"
+                    },
+                    {
+                        "icon": {
+                            "type": "map-pin",
+                            "size": 20,
+                            "strokeWidth": 2,
+                            "color": "#14B8A6"
+                        },
+                        "title": "onboarding.permissions.location",
+                        "description": "onboarding.permissions.locationDesc"
+                    }
+                ],
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.permissions.grantPermissions",
+                        "icon": "arrow-right",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#10B981"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "back": {
+                        "text": "onboarding.permissions.back",
+                        "icon": "arrow-left",
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#EF4444"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.permissions.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            },
+            "history": {
+                "id": "history",
+                "icon": {
+                    "type": "history",
+                    "size": 80,
+                    "strokeWidth": 2,
+                    "color": "#F97316"
+                },
+                "content": {
+                    "title": "onboarding.history.title",
+                    "subtitle": "onboarding.history.subtitle",
+                    "description": "onboarding.history.description",
+                    "features": [
+                        "onboarding.history.features.1",
+                        "onboarding.history.features.2",
+                        "onboarding.history.features.3"
+                    ]
+                },
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.history.continue",
+                        "icon": "arrow-right",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#14B8A6"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "back": {
+                        "text": "onboarding.history.back",
+                        "icon": "arrow-left",
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#14B8A6"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.history.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            },
+            "rating": {
+                "id": "rating",
+                "icon": {
+                    "type": "star",
+                    "size": 80,
+                    "strokeWidth": 2,
+                    "fill": true,
+                    "color": "#F59E0B"
+                },
+                "content": {
+                    "title": "onboarding.rating.title",
+                    "subtitle": "onboarding.rating.subtitle",
+                    "description": "onboarding.rating.description",
+                    "features": [
+                        "onboarding.rating.benefits.1",
+                        "onboarding.rating.benefits.2",
+                        "onboarding.rating.benefits.3"
+                    ]
+                },
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.rating.rateNow",
+                        "icon": "star",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#F59E0B"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "back": {
+                        "text": "onboarding.rating.back",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.rating.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            },
+            "subscription": {
+                "id": "subscription",
+                "gradientColors": {
+                    "light": ["#8B5CF6", "#A855F7", "#C084FC"],
+                    "dark": ["#581C87", "#7C3AED", "#A855F7"]
+                },
+                "icon": {
+                    "type": "crown",
+                    "size": 80,
+                    "color": "#FFFFFF",
+                    "strokeWidth": 2
+                },
+                "content": {
+                    "title": "onboarding.subscription.title",
+                    "subtitle": "onboarding.subscription.subtitle",
+                    "description": "onboarding.subscription.description",
+                    "features": [
+                        "onboarding.subscription.features.1",
+                        "onboarding.subscription.features.2",
+                        "onboarding.subscription.features.3",
+                        "onboarding.subscription.features.4"
+                    ],
+                    "pricing": {
+                        "yearly": {
+                            "title": "onboarding.subscription.yearly",
+                            "price": "onboarding.subscription.yearlyPrice",
+                            "discount": "onboarding.subscription.yearlyDiscount"
+                        }
+                    }
+                },
+                "navigation": {
+                    "next": {
+                        "text": "onboarding.subscription.startTrial",
+                        "icon": "crown",
+                        "show": true,
+                        "style": {
+                            "backgroundColor": "#8B5CF6"
+                        },
+                        "textStyle": {
+                            "color": "#ffffff"
+                        }
+                    },
+                    "back": {
+                        "text": "onboarding.subscription.cancel",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    },
+                    "skip": {
+                        "text": "onboarding.subscription.skip",
+                        "icon": null,
+                        "show": false,
+                        "style": {
+                            "backgroundColor": "transparent"
+                        },
+                        "textStyle": {
+                            "color": "#6B7280"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
